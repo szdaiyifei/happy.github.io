@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="ie lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html class="ie lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>    <html class="ie lt-ie9"> <![endif]-->
+<!--[if gt IE 8]> <html> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+  <!-- <![endif]-->
+  <head>
+    <title>Happy Birthday</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Happy Birthday Xola" />
+    <meta name="robots" content="index, follow" />
+    <link rel="author" href="https://plus.google.com/u/1/+AyushSharma1/" />
+    <meta name="keywords" content="Birthday, Happy" />
+    <!-- Strat of Facebook Meta -->
+    <meta property="og:type" content="E-Greeting" />
+    <meta property="og:image" content="favicon.ico" />
+    <meta property="og:description" content="Wish you a very Happy Birthday" />
+    <!-- End of Facebook Meta Tags -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+    <link rel="stylesheet" type="text/css" href="loading.css" />
+    <link
+      href="http://fonts.googleapis.com/css?family=Signika"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- <link href='http://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'> -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.1.0/less.min.js"></script>
+
+    <style>
+      body {
+        background-color: pink;
+      }
+      .banner {
+        width: 900px;
+        height: 1000px;
+        position: relative;
+        /* border: 1px solid red; */
+        margin: 100px auto 50px;
+      }
+
+      .banner .wrap {
+        width: 100%;
+      }
+
+      .banner .wrap .item {
+        width: 100%;
+      }
+
+      .item img {
+        width: 900px;
+        height: 900px;
+        vertical-align: top;
+        position: absolute;
+      }
+
+      .div1 {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translatey(-50%);
+        cursor: pointer;
+        width: 41px;
+        height: 69px;
+        font-size: 30px;
+        line-height: 70px;
+        text-align: center;
+        color: #d6d8d4;
+        background-color: rgba(0, 0, 0, 0.3);
+      }
+
+      .div2 {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translatey(-50%);
+        cursor: pointer;
+        width: 41px;
+        height: 69px;
+        font-size: 30px;
+        line-height: 70px;
+        text-align: center;
+        color: #d6d8d4;
+        background-color: rgba(0, 0, 0, 0.3);
+      }
+
+      .pagenation {
+        position: flex;
+        /* border: 1px solid red; */
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        bottom: 100px;
+      }
+
+      .pagenation > div {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: white;
+        margin-right: 10px;
+        cursor: pointer;
+      }
+
+      .pagenation > div:last-child {
+        margin-right: 0;
+      }
+
+      .container {
+        margin-bottom: 100px; /* 添加了 margin-bottom 属性来设置容器与下方元素的距离 */
+      }
+
+      .message {
+        /* margin-left: 1000px; */
+        text-align: center;
+        color: #8377e4;
+        font-family: "SimSun", Arial, sans-serif;
+        font-size: 17px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="loading"></div>
+    <audio src="music/1.mp3" autoplay="true" loop="true"></audio>
+    <div class="balloons text-center" id="b1">
+      <h2 style="color: #f2b300">生</h2>
+    </div>
+    <div class="balloons text-center" id="b2">
+      <h2 style="color: #0719d4">日</h2>
+    </div>
+    <div class="balloons text-center" id="b3">
+      <h2 style="color: #d14d39">快</h2>
+    </div>
+    <div class="balloons text-center" id="b4">
+      <h2 style="color: #8fad00">乐</h2>
+    </div>
+    <div class="balloons text-center" id="b5">
+      <h2 style="color: #8377e4">陆</h2>
+    </div>
+    <div class="balloons text-center" id="b6">
+      <h2 style="color: #99c96a">嘉</h2>
+    </div>
+    <div class="balloons text-center" id="b7">
+      <h2 style="color: #20cfb4">颖</h2>
+    </div>
+
+    <div class="container">
+      <div class="banner">
+        <div class="warp">
+          <!-- 这里修改自己的图片路径哦~ -->
+          <div class="item"><img src="img/1.jpg" alt="" /></div>
+          <div class="item"><img src="img/2.jpg" alt="" /></div>
+          <div class="item"><img src="img/3.jpg" alt="" /></div>
+          <div class="item"><img src="img/4.jpg" alt="" /></div>
+          <div class="item"><img src="img/5.jpg" alt="" /></div>
+          <div class="item"><img src="img/6.jpg" alt="" /></div>
+          <div class="item"><img src="img/7.jpg" alt="" /></div>
+        </div>
+        <div class="div1">&lt;</div>
+        <div class="div2">&gt;</div>
+        <!-- 小圆点 -->
+        <div class="pagenation">
+          <div id="pagenation-item0"></div>
+          <div id="pagenation-item1"></div>
+          <div id="pagenation-item2"></div>
+          <div id="pagenation-item3"></div>
+          <div id="pagenation-item4"></div>
+          <div id="pagenation-item5"></div>
+          <div id="pagenation-item6"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="message">
+      <p>To 陆嘉颖：</p>
+      <p>
+        时间过得真的很快，成长是不期而遇的，生日当然也如期而至，一转眼你也要步入你的20岁了，大家都祝你生日快乐
+      </p>
+      <p>
+        那我祝你万事如意吧，一切都比你所期待的还要好一点点！关于20岁的礼物，其实我想了很久，有什么是具有一些除了能买到的东西以外的价值的，决定留下这封生日信，能力有限做的不够好，但是希望能够有一些特别的意义！
+      </p>
+      <p>
+        照片我找了一段时间好像都是很久很久以前的了放到网站上也有些失真你不要介意哈哈哈，从相识到成为好朋友的这些日子里，我看到你一点点的成长变得更加成熟，这当然是好事，但我更愿你保持初心，就像热烈的18岁时候，三分惊喜，七分尽兴！！
+      </p>
+      <p>
+        愿你在新的一岁，继续保持善良、纯真，学业有成，奔走在自己的热爱里，烟花向星辰，所愿皆成真！当然最重要的是要幸福、开心，就像我说的，在我们不为人知的未来里，我们平安喜乐就好！！！
+      </p>
+      <p>
+        过去的所有终将成为一段美好的回忆，站在未来里希望我们彼此都能有一个美好的前程，为心中的理想全力以赴，做自己认为对的事情，既然选择了远方便只顾风雨兼程吧，我一直觉得我始终差了点运气，但是尽人事，听天命，结果一定不会太差的！
+      </p>
+      <p>
+        不知道写些什么了，真的是后悔没学好语文哈哈哈，那就祝我们友谊长存，天天开心，但是世事难料的，未来是很难预测的，每个人都只能在你的生命里陪伴你一段时光，当然我希望这段时光尽量久一些吧。
+      </p>
+      <p>
+        但是如果不给自己的挚友留下一些什么真的会很遗憾不是吗，想想那些小时候玩的很好但是现在已然不联系的朋友，甚至连见一面都很难了。
+        但是在时间的长河里好像就是这样，从古至今，也遵循这些规律不是吗。
+      </p>
+      <p>
+        未来我们彼此都会成家立业，忙碌于自己的人生，所以我更希望在我们彼此不联系的日子里各自努力，攀登自己心中的高峰。虽然说相见时难别亦难，然而人生又何处不相逢呢？说不定我们在山顶又能遇见，那时候再回忆我们20岁的，
+      </p>
+      <p>
+        我想一定是十分怀念的。未来的某年某月某天，说不定我已经将这个网站遗忘，甚至记不起密码，而你恰好打开尘封的回忆，你就给我发个消息让我来猜重温这一份美好的回忆……
+      </p>
+      <p>
+        背景音乐，是我这段时间非常喜欢听的歌郑润泽的《瞬》，有一句歌词“说过要一起看的海，如今我独自等待”。而评论区的热评是：一定会见，就在某天！
+      </p>
+      <p>
+        最后的最后呢，许个愿吧，希望我们都能有一份自己热爱的事业，收到自己心仪的学校或者工作岗位的offer，遇到属于自己真正的幸福。山高路远，看世界也找自己！
+      </p>
+      <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        你的同伴：戴逸飞
+      </p>
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="effect.js"></script>
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i["GoogleAnalyticsObject"] = r;
+      (i[r] =
+        i[r] ||
+        function () {
+          (i[r].q = i[r].q || []).push(arguments);
+        }),
+        (i[r].l = 1 * new Date());
+      (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m);
+    })(
+      window,
+      document,
+      "script",
+      "//www.google-analytics.com/analytics.js",
+      "ga"
+    );
+
+    ga("create", "UA-58229732-1", "auto");
+    ga("send", "pageview");
+
+    var index = 0; //定义初始下标
+    var banner = document.getElementsByClassName("banner")[0];
+    var itemList = document.getElementsByClassName("item");
+    var pagenationList = document.querySelectorAll(".pagenation>div");
+    var pagenation = document.querySelector(".pagenation");
+    itemList[0].style.opacity = 1;
+    pagenationList[0].style.background = "blue"; //初始第一张图对应的小圆点的颜色为蓝色
+    var up = document.getElementsByClassName("div1")[0];
+    var next = document.getElementsByClassName("div2")[0];
+    //下一张图片（封装方便下面自动播放定时器调用）
+    function nextFn() {
+      index = index >= itemList.length - 1 ? 0 : ++index; //判断点击到了最后一张图片再次点击返回到第一张图
+      for (var i = 0; i < itemList.length; i++) {
+        itemList[i].style.opacity = 0; //图片透明度为0图片隐藏
+        pagenationList[i].style.background = "white "; //图片没显现小圆点的颜色为白色
+      }
+      itemList[index].style.transition = "opacity 1s ease .2s";
+      itemList[index].style.opacity = 1; //图片透明度为1图片显现
+      pagenationList[index].style.background = "blue"; //图片显现小圆点的颜色为蓝色
+    }
+    next.onclick = nextFn; //下一张（点击事件）点击切换下一张图片
+    up.onclick = function () {
+      //上一张（点击事件）点击切换上一张图片
+      index = index <= 0 ? itemList.length - 1 : --index; //判断点击到了第一张图片再次点击返回到最后一张图
+      for (var i = 0; i < itemList.length; i++) {
+        itemList[i].style.opacity = 0;
+        pagenationList[i].style.background = "white";
+      }
+      itemList[index].style.transition = "opacity 1s ease .2s"; //增加过渡效果
+      itemList[index].style.opacity = 1;
+      pagenationList[index].style.background = "blue";
+    };
+    //设置定时器，自动向下播放图片
+    var t1 = setInterval(nextFn, 2000);
+    banner.onmouseover = function () {
+      clearInterval(t1);
+    };
+    banner.onmouseout = function () {
+      t1 = setInterval(nextFn, 2000);
+    };
+    // 事件委托
+    pagenation.onclick = function (event) {
+      event = window.event || event;
+      console.log(event);
+      if (event.target.className == "pagenation") {
+        console.log("点击的是父元素");
+      } else {
+        var id = event.target.id;
+        var photoIndex = null;
+        for (var i = 0; i < pagenationList.length; i++) {
+          pagenationList[i].style.background = "white";
+          if (id.indexOf(i) >= 0) {
+            photoIndex = i;
+          }
+        }
+        event.target.style.background = "blue";
+        index = photoIndex; // 将小圆点对应的下标与图片下标对应
+        for (var i = 0; i < itemList.length; i++) {
+          itemList[i].style.opacity = 0;
+        }
+        itemList[index].style.transition = "opacity 1s ease .2s";
+        itemList[photoIndex].style.opacity = 1;
+      }
+    };
+  </script>
+</html>
